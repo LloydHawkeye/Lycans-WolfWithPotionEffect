@@ -1,6 +1,6 @@
 ﻿using BepInEx;
 using UnityEngine;
-using WolfWithPotionEffect.Patch;
+using WolfWithPotionEffect.Patchs;
 
 namespace WolfWithPotionEffect
 {
@@ -19,13 +19,14 @@ namespace WolfWithPotionEffect
         public const string PLUGIN_GUID = $"{PLUGIN_AUTHOR}.{PLUGIN_NAME}";
         public const string PLUGIN_AUTHOR = "LloydHawkeye";
         public const string PLUGIN_NAME = "WolfWithPotionEffect";
-        public const string PLUGIN_VERSION = "1.0.0";
+        public const string PLUGIN_VERSION = "1.1.0";
 
         private void Awake()
         {
             // Initialise le logger global du plugin
             Log.Init(Logger);
             PlayerControllerPatch.Patch();
+            LocalCameraHandlerPatch.Patch();
         }
     }
 }

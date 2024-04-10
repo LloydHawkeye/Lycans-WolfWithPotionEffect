@@ -1,8 +1,9 @@
 ﻿
 
+using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
-namespace WolfWithPotionEffect.Patch
+namespace WolfWithPotionEffect.Patchs
 {
     internal class PlayerControllerPatch
     {
@@ -19,6 +20,12 @@ namespace WolfWithPotionEffect.Patch
                 {
                     self.Item.Cancel();
                 }
+                self.PlayerEffectManager.glowingLight.color = Color.red;
+            }
+            if (!(bool)self.IsWolf)
+            {
+                Color color = ColorManager.GetColor(self.Index);
+                self.PlayerEffectManager.glowingLight.color = color;
             }
             PlayerController povPlayer = PlayerController.Local.LocalCameraHandler.PovPlayer;
             if (povPlayer == self)
