@@ -10,3 +10,8 @@ _Mod Host-Only (seul l'hôte de la partie doit l'installer pour qu'il soit fonct
 - Requiert le pack [BepInEx de Lycans](https://github.com/lycans-modding/BepInExPack-Lycans/releases)
 - Copier le [Fichier DLL](https://github.com/LloydHawkeye/Lycans-WolfWithPotionEffect/releases) dans le dossier "plugins" de BepInEx
 - Plus de détails sur l'installation de mods sur le [WIKI Modding de Lycans](https://lycans-modding.github.io/LMWiki/Jouer/Installer-des-mods/)
+
+---
+#### problèmes connus : 
+- Se transformer en loup remet la vu d'origine (mais les personnes voient toujours un loup géant)
+- La potion lumineuse affiche la couleur du joueur lorsqu'il est transformé en loup (ce qui rend le loup facilement repérable)
