@@ -1,0 +1,10 @@
+{
+	"name": "WolfWithPotionEffect",
+	"version_number": "1.1.0",
+	"website_url": "https://github.com/LloydHawkeye/Lycans-WolfWithPotionEffect",
+	"description": "Mod permettant de garder l'effet d'une potion active quand le joueur se transforme en loup.",
+	"dependencies": [
+		"BepInEx-BepInExPack-5.4.2100",
+		"LycansModding-HookGenPatcher-1.0.0"
+	]
+}
